@@ -25,3 +25,8 @@ jobs:
         run: |
           echo "Hello"
           echo "Github Action"
+
+      - name: Github Action 내장 환경 변수 사용
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
