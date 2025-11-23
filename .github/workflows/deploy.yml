@@ -30,3 +30,7 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+
+      - name: Repository secrets 추가
+        run: | 
+          echo ${{ secrets.MY_NAME }}
